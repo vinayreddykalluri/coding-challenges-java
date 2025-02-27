@@ -9,8 +9,5 @@ public class Main {
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
         }
-
-        int b = 0;
-        System.out.println(b);
     }
 }
