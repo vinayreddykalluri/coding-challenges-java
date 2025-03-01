@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
@@ -9,5 +11,13 @@ public class Main {
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
         }
+
+        Scanner sc = new Scanner(System.in);
+        int number1 = sc.nextInt();
+        int number2 = sc.nextInt();
+        int sum = number1 + number2;
+        System.out.println(sum);
+        sc.close();
+    
     }
 }
