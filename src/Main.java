@@ -8,8 +8,8 @@ public class Main {
         for (int i = 0; i < a.length; i++) {
             a[i] = i;
         }
-        for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i]);
+        for (int j : a) {
+            System.out.println(j);
         }
 
         Scanner sc = new Scanner(System.in);
@@ -18,6 +18,5 @@ public class Main {
         int sum = number1 + number2;
         System.out.println(sum);
         sc.close();
-    
     }
 }
