@@ -5,35 +5,22 @@ public class ReverseANumber {
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
 
-        // Check if number is zero
+        // Handle special case: If input is 0
         if (number == 0) {
             System.out.println("0");
             return;
         }
 
-        // Count trailing zeros
-        int trailingZeros = 0;
+        // Track and remove trailing zeros
         while (number % 10 == 0) {
-            trailingZeros++;
-            number /= 10; // Remove trailing zeros temporarily
-        }
-
-        // Reverse the number manually without using any library
-        int reversedNumber = 0;
-        while (number > 0) {
-            reversedNumber = reversedNumber * 10 + number % 10;
+            System.out.print("0");  // Print trailing zeros first
             number /= 10;
         }
 
-        // Print reversed number manually without converting to String
-        while (reversedNumber > 0) {
-            System.out.print(reversedNumber % 10);
-            reversedNumber /= 10;
-        }
-
-        // Print trailing zeros manually
-        for (int i = 0; i < trailingZeros; i++) {
-            System.out.print("0");
+        // Reverse and print manually, digit by digit
+        while (number > 0) {
+            System.out.print(number % 10); // Print last digit first
+            number /= 10;
         }
 
         System.out.println(); // Move to next line
