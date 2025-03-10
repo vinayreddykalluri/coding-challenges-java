@@ -5,24 +5,25 @@ public class ReverseANumber {
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
 
-        // Handle special case: If input is 0
         if (number == 0) {
             System.out.println("0");
             return;
         }
 
-        // Track and remove trailing zeros
+        // Directly print trailing zeros first
+        int trailingZeros = 0;
         while (number % 10 == 0) {
-            System.out.print("0");  // Print trailing zeros first
+            trailingZeros++;
             number /= 10;
         }
+        while (trailingZeros -- > 0) System.out.print("0");
 
-        // Reverse and print manually, digit by digit
+        // Reverse number and print digits directly (avoiding extra calculations)
         while (number > 0) {
-            System.out.print(number % 10); // Print last digit first
+            System.out.print(number % 10);
             number /= 10;
         }
 
-        System.out.println(); // Move to next line
+        System.out.println(); // Move to the next line
     }
 }
