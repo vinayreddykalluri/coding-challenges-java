@@ -1,0 +1,74 @@
+🚀 Java 8 Certification: Summary of Packages
+
+✅ Definition: A package is a namespace that groups related classes, interfaces, and sub-packages for better organization and access control.
+
+✅ Types of Packages:
+	1.	Built-in Packages (e.g., java.util, java.io, java.lang)
+	2.	User-Defined Packages (Custom packages created by developers)
+
+✅ Declaring a Package:
+	•	First line in a Java file:
+
+package mypackage;
+
+
+	•	Compiling:
+
+javac -d . MyClass.java
+
+
+
+✅ Importing Packages:
+	1.	Import a specific class:
+
+import java.util.ArrayList;
+
+
+	2.	Import the entire package:
+
+import java.util.*;
+
+
+	3.	Use fully qualified name (without import):
+
+java.util.List<String> list = new java.util.ArrayList<>();
+
+
+	4.	Static Import (import static members of a class):
+
+import static java.lang.Math.sqrt;
+
+
+
+✅ Access Modifiers & Package Scope:
+
+Modifier	Same Class	Same Package	Subclass (Different Package)	Different Package
+public	✅ Yes	✅ Yes	✅ Yes	✅ Yes
+protected	✅ Yes	✅ Yes	✅ Yes (via inheritance)	❌ No
+default (No modifier)	✅ Yes	✅ Yes	❌ No	❌ No
+private	✅ Yes	❌ No	❌ No	❌ No
+
+✅ Sub-Packages:
+	•	Declaring a sub-package:
+
+package mypackage.utils;
+
+
+	•	Accessing it:
+
+import mypackage.utils.Utility;
+
+
+
+✅ Common Errors in Packages:
+	1.	Default classes (default access) cannot be accessed outside their package.
+	2.	Protected methods can only be accessed via inheritance, not by object reference.
+	3.	import java.util; is invalid, must specify java.util.* or a class name.
+
+✅ Mock Interview Questions:
+	•	Q: Can a protected method be accessed in a different package?
+A: Only via inheritance, not directly via object reference.
+
+⸻
+
+🔥 Master these concepts, and you’ll ace the Java 8 Certification package-related questions! 🚀
