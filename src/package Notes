@@ -6,6 +6,7 @@
 	1.	Built-in Packages (e.g., java.util, java.io, java.lang)
 	2.	User-Defined Packages (Custom packages created by developers)
 
+
 ✅ Declaring a Package:
 	•	First line in a Java file:
 
