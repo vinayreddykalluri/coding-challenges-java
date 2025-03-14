@@ -1,3 +1,5 @@
+package Numbers;
+
 import java.util.HashSet;
 
 public class MagicNumber {

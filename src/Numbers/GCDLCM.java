@@ -1,3 +1,5 @@
+package Numbers;
+
 public class GCDLCM {
     public static void main(String[] args) {
         int a = 12, b = 18;
