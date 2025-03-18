@@ -1,6 +1,9 @@
 package Numbers;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Set;
 
 public class SmallestBinaryMultiple {
     public static String findSmallestMultiple(int n) {
