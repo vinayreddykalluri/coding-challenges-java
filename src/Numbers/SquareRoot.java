@@ -3,7 +3,6 @@ package Numbers;
 public class SquareRoot {
     public static int sqrt(int x) {
         if (x == 0 || x == 1) return x;
-
         int left = 1, right = x, result = 0;
 
         while (left <= right) {
