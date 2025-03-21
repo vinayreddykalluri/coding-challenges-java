@@ -16,7 +16,6 @@ public class SquareRoot {
         }
         return result;
     }
-
     public static void main(String[] args) {
         System.out.println(sqrt(8));  // Output: 2
         System.out.println(sqrt(16)); // Output: 4
