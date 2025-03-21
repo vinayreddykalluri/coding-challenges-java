@@ -11,5 +11,6 @@ public class SingleNumber {
 
     public static void main(String[] args) {
         System.out.println(findSingleNumber(new int[]{4, 1, 2, 1, 2})); // Output: 4
+        System.out.println(findSingleNumber(new int[]{4, 1, 2, 1, 2}));
     }
 }
