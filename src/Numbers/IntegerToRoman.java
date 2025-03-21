@@ -17,5 +17,6 @@ public class IntegerToRoman {
 
     public static void main(String[] args) {
         System.out.println(intToRoman(1994)); // Output: MCMXCIV
+        System.out.println(intToRoman(2000));
     }
 }
